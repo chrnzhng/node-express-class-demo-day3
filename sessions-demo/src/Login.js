@@ -7,7 +7,11 @@ export default class Login extends Component {
     let username = this.username.value;
     let password = this.password.value;
 
-    axios.post('/api/login', { username, password })
+    axios.post('/api/login', { username, password }).then(res => {
+      console.log(res, ' response')
+    }).catch(err => {
+      console.log(err, ' error')
+    })
   }
 
   render() {

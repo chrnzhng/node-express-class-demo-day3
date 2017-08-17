@@ -7,6 +7,7 @@ module.exports = {
             next()
         } else {
             res.status(403).send('Access denied!')
+            console.log('Failed')
         }
     }
 
