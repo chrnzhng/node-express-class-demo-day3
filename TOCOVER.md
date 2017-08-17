@@ -8,7 +8,7 @@ This is a list of topics that we'll be covering in today's lecture. Feel free to
 - Res.redirect()
 
 ## Request level middleware
-
+app.post('/api/login', [MIDDLEWARE..], (req, res, next) =>)
 
 ## Express sessions
 
